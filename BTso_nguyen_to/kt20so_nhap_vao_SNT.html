@@ -8,7 +8,7 @@
     </head>
     <body>
         <script>
-            function isPrimeNumber(number) {
+            function isPrime(number) {
                 if (number == 1) {
                     return false;
                 }
@@ -22,10 +22,10 @@
                 }
                 return true;
             }
-            function tinhSoNguyenTo(count) {
+            function Count_prime(count) {
                 let number = 1;
                 for (let i = 1; i <= count; ) {
-                    if (isPrimeNumber(number) == true) {
+                    if (isPrime(number) == true) {
                         document.write(number /*+" i = " + i + */ + "\n");
                         number++;
                         i++;
@@ -34,7 +34,7 @@
                     }
                 }
             }
-            tinhSoNguyenTo(20);
+            Count_prime(20);
         </script>
     </body>
 </html>
